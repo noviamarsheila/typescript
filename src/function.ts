@@ -13,3 +13,12 @@ function getAge(): number {
 function printName(): void {
 	console.log("Sheila");
 }
+printName();
+
+//
+function multiply(val1: number, val2: number): number {
+	return val1 * val2;
+}
+
+const result = multiply(2, 3);
+console.log(result);
