@@ -20,3 +20,8 @@ console.log(result);
 const Add = (val1, val2) => {
     return val1 + val2;
 };
+// defualt parameter
+const fullName = (firstName, lastName = "Sheila") => {
+    return firstName + " " + lastName;
+};
+console.log(fullName("Novia"));

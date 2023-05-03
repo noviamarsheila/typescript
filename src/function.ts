@@ -29,3 +29,9 @@ type Tambah = (val1: number, val2: number) => number;
 const Add: Tambah = (val1: number, val2: number): number => {
 	return val1 + val2;
 };
+
+// defualt parameter
+const fullName = (firstName: string, lastName: string = "Sheila"): string => {
+	return firstName + " " + lastName;
+};
+console.log(fullName("Novia"));
