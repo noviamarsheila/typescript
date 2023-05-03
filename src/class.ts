@@ -18,6 +18,12 @@ console.log(user);
 class Admin extends User {
 	read: boolean = true;
 	write: boolean = true;
+	phone: string;
+
+	constructor(phone: string, name: string, age: number) {
+		super(name, age);
+		this.phone = phone;
+	}
 
 	getRole(): { read: boolean; write: boolean } {
 		return {
@@ -27,7 +33,8 @@ class Admin extends User {
 	}
 }
 
-let admin = new Admin("Sheila", 19);
+let admin = new Admin("0823746736748", "Sheila", 19);
 // admin.getName();
 admin.getRole();
 // admin.setName("Novia");
+admin.phone;

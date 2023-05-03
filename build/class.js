@@ -15,10 +15,11 @@ console.log(user);
 // protected = hanya bisa diakses dari class tersebut, dan class turunannya
 // privat = hanya bisa diakses diclass itu sendiri
 class Admin extends User {
-    constructor() {
-        super(...arguments);
+    constructor(phone, name, age) {
+        super(name, age);
         this.read = true;
         this.write = true;
+        this.phone = phone;
     }
     getRole() {
         return {
@@ -27,7 +28,8 @@ class Admin extends User {
         };
     }
 }
-let admin = new Admin("Sheila", 19);
+let admin = new Admin("0823746736748", "Sheila", 19);
 // admin.getName();
 admin.getRole();
 // admin.setName("Novia");
+admin.phone;
