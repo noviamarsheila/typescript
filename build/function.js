@@ -25,3 +25,8 @@ const fullName = (firstName, lastName = "Sheila") => {
     return firstName + " " + lastName;
 };
 console.log(fullName("Novia"));
+// optional parameter
+const getUmur = (val1, val2) => {
+    return val1 + " " + val2;
+};
+console.log(getUmur(1, 2));
