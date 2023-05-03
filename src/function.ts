@@ -22,3 +22,10 @@ function multiply(val1: number, val2: number): number {
 
 const result = multiply(2, 3);
 console.log(result);
+
+// function as type
+type Tambah = (val1: number, val2: number) => number;
+
+const Add: Tambah = (val1: number, val2: number): number => {
+	return val1 + val2;
+};
